@@ -1,0 +1,29 @@
+
+
+
+<div id="itineraries" class="transitions-enabled">
+	
+
+<% @itineraries.each do | itinerary | %> 
+ <div  class="box panel panel-default">
+
+<%= link_to (image_tag itinerary.image.url), itinerary %>
+   <div class="panel-body">
+      <h2> <%= link_to itinerary.name, itinerary_path( :id => itinerary.id,:src => "all") %></h2>
+
+      <p class="user"> submitted by <%= itinerary.user.email %>
+            						<div class="btn btn-default btn-group pull-right">
+
+							 	    <%= link_to like_itinerary_path(itinerary), method: :put do %> 
+							 	   			<span class="glyphicon glyphicon-heart"> 
+							 	   					<%= itinerary.get_upvotes.size %>
+							 	   			</span> 
+							 	   			<% end %>
+
+							   </div>
+							 </p>
+    </div>
+  </div>
+<% end %>
+
+</div>
