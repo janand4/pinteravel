@@ -60,4 +60,4 @@ group :production do
 	gem 'unicorn'
 end
 
-ruby '2.1.2'
+
