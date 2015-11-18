@@ -1,7 +1,7 @@
 
 
 
-<%= simple_form_for @itinerary, html: { class: 'directUpload', data: {multipart: true} do |f| %>
+<%= simple_form_for @itinerary, html: {multipart: true} do |f| %>
 
 <% if @itinerary.errors.any? %>
   <div class="errors">
