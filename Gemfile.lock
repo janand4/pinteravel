@@ -237,6 +237,7 @@ DEPENDENCIES
   jquery-turbolinks
   jquery-ui-rails
   masonry-rails
+  minitest (~> 5.8, >= 5.8.2)
   paperclip (~> 4.3)
   pg
   rails (= 4.2.4)

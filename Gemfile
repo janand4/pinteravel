@@ -38,6 +38,7 @@ gem 'gmaps4rails'
 gem 'underscore-rails'
 gem 'jquery-ui-rails'
 gem 'fancybox-rails'
+gem 'minitest', '~> 5.8', '>=5.8.2'
 
 
 
