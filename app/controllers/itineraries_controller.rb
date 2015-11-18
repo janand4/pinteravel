@@ -1,7 +1,7 @@
 class ItinerariesController < ApplicationController
 before_action :find_itinerary, only: [:show, :edit, :update, :destroy, :upvote]
 before_action :authenticate_user!, except: [:index, :show]
-before_action :set_s3_direct_post, only: [:new, :edit, :create, :update]
+
 
 
 
