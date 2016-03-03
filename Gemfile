@@ -55,6 +55,7 @@ gem 'sqlite3'
 end
 
 group :production do
+	#gem mysql2 -v '0.4.3'
 	gem 'pg'
 	gem 'rails_12factor'
 	gem 'unicorn'

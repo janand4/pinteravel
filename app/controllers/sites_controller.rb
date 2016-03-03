@@ -19,7 +19,7 @@ class SitesController < ApplicationController
     @city = City.find_by("id = ?", params[:trip][:city_id])
     @country = Country.find_by("id = ?", params[:trip][:country_id])
 
-    @keys = {consumer_key: 'AAjxUGv8qJDJBD2HrrfHtw', consumer_secret: '-8LBfZ053iUnBE3I2wEMfi2tx-0', token: '7f_HgQYjrhwdvq8tl-X--MfT4dfpQ09h', token_secret: 'p-kqumRE-InibQEzz76HsDGGGMw'}
+    @keys = {consumer_key: 'AAjxUGv8qJDJBD2HrrfHtw', consumer_secret: '-8LBfZ053iUnBE3I2wEMfi2tx-0', token: 'xOmQlVb3DCGkJUXqppqmiBLWKBOuWiPr', token_secret: '45SDkCt3uAuVzRGs_KNo25sHFn4'}
     yelp = YelpApi.new(@keys) 
     @location = URI.encode(@city.name.titleize.to_s + ' , ' + @country.name.titleize.to_s)
 
